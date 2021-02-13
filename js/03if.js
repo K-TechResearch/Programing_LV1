@@ -1,13 +1,7 @@
 input.onButtonPressed(Button.A, function () {
-    if (input.isGesture(Gesture.LogoUp)) {
+    if (input.lightLevel() > 100) {
         for (let index = 0; index < 5; index++) {
-            basic.showLeds(`
-                . # . # .
-                # . # . #
-                # . . . #
-                . # . # .
-                . . # . .
-                `)
+            basic.showIcon(IconNames.Heart)
             basic.showLeds(`
                 . . . . .
                 . . . . .

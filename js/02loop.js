@@ -1,12 +1,6 @@
-input.onGesture(Gesture.Shake, function () {
+input.onButtonPressed(Button.B, function () {
     for (let index = 0; index < 5; index++) {
-        basic.showLeds(`
-            . # . # .
-            # . # . #
-            # . . . #
-            . # . # .
-            . . # . .
-            `)
+        basic.showIcon(IconNames.Heart)
         basic.showLeds(`
             . . . . .
             . . . . .
